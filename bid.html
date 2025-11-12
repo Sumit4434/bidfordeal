@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>bidfordeal.com</title>
+    <link rel="stylesheet" href="bid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="bidlogin.html">
+    <link rel="stylesheet" href="BidSignup.html"> -->
+    <link rel="icon" href="https://bidfordeal.com/public/frontend_assets/img/bidfordeal_icon.png" type="image/gif"
+        sizes="20x20">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BidForDeal - India's honest auction platform for electronics, fashion, and more.">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-wxM5FYwJw2ZptwJYxJjB05QlwZbm7V0ZqAInwTqlce8mZoy0jqFJf7HjxnUyFzUyQy6dPvN5w1uH2wE29NHB7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <nav>
+        <div id="Active">
+            <h4><i class="fa-solid fa-gavel"></i>Active Auctions</h4>
+        </div>
+        <div>
+            <h4><i class="fa-solid fa-arrows-to-dot"></i>Corrigendum</h4>
+        </div>
+        <div>
+            <h4><i class="fa-solid fa-sack-dollar"></i>Auctions By Value</h4>
+        </div>
+        <div>
+            <h4><i class="fa-solid fa-gift"></i>Results of Auctions</h4>
+        </div>
+    </nav>
+    <header>
+        <div class="Container">
+            <div class="logo">
+                <img src="./bidfordeal.png" alt="error">
+                
+            </div>
+            <div class="Search-bar">
+                <input type="text" id="Search1" placeholder="Search for  products,brands and more.. ">
+                <div id="productss"></div>
+                <div class="hy">
+                    <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+            </div>
+            <div class="btn">
+
+                <button id="login"> <i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button>
+                <button id="signup"><i class="fa-solid fa-user-plus"></i>Signup</button>
+
+            </div>
+        </div>
+    </header>
+    <section id="section1"></section>
+
+    <section id="section2">
+        <div id="products">
+            <h1 id="All">All Products
+                <div id="orange1">
+                    <div id="whiter"></div>
+                </div>
+            </h1>
+            <div class="select-container">
+                <div class="icon"><i class="fa-solid fa-list"></i></div>
+                <select name="tech" id="tech">
+                    <option disabled selected value="">Categories</option>
+                    <option value="men's clothing">men's clothing</option>
+                    <option value="jewelery">jewelery</option>
+                    <option value="electronics">electronics</option>
+                    <option value="women's clothing">women's clothing</option>
+                    <option value="all">All</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div id="parts">
+            <div class="cards">
+                <img class="img" src="/a1/1758192763.jpeg" alt="">
+                <h3>Set of 3 - Grown Alchemist - Polishing Facial Exfo...</h3>
+                <span>₹0.00</span>
+                <time datetime="time">00:00:00</time>
+                <br>
+                <button class="btn-closed">Closed</button>
+                <h4>Buy it now: ₹59.00</h4>
+            </div>
+
+            <!-- <div class="cards">
+                <img class="img" src="/a1/1758191131.jpg" alt="">
+                <h3>Earth Wood Kotor Sunglasses - Black Metal / Dark B...</h3>
+                <span>₹1,992.00</span>
+                <time datetime="time">00:00:00</time>
+                <br>
+                <button class="btn-closed">Closed</button>
+                <h4>Buy it now:₹599.00</h4>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/a1/1758191670.jpeg" alt="">
+                <h3>Veho STIX II Pro True Wireless Earphones with ANC....</h3>
+                <span>₹2,998.00</span>
+                <time datetime="time">00:00:00</time>
+                <br>
+                <button class="btn-closed">Closed</button>
+                <h4>Buy it now: ₹999.00</h4>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/a1/1758191932.jpg" alt="">
+                <h3>KitchenAid Artisan Series 5-Quart Mixer, Empire Re...</h3>
+                <span>₹971.50</span>
+                <time datetime="time">00:00:00</time>
+                <br>
+                <button class="btn-closed">Closed</button>
+                <h4>Buy it now: ₹199.00</h4>
+            </div>
+
+
+            <div class="cards">
+                <img class="img" src="/a1/1758190621.jpg" alt="">
+                <h3>Beats Studio Pro - Wireless Noise Cancelling Over-...
+
+                </h3>
+                <span>₹4,999.00</span>
+                <time datetime="time">00:00:00</time>
+                <br>
+                <button class="btn-closed">Closed</button>
+                <h4>Buy it now:₹999.00</h4>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/a1/1758012651.jpeg" alt="">
+                <h3>MacBook Pro</h3>
+                <span class="extra">₹105,000.00</span>
+                <time datetime="time">00:00:00</time>
+                <br>
+                <button class="btn-closed">Closed</button>
+                <h4>Buy it now:₹49,999.00</h4>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/a1/1758008773.jpg" alt="">
+                <h3>i phone 16</h3>
+                <span class="extra">₹135,000.00</span>
+                <time datetime="time">00:00:00</time>
+                <br>
+                <button class="btn-closed">Closed</button>
+                <h4>Buy it now:₹75,000.00</h4>
+            </div>
+
+            <div class="cards">
+                <img class="img" src="/a1/1758012760.jpg" alt="">
+                <h3>Samsung Galaxy S25 Ultra</h3>
+                <span>₹104,599.00</span>
+                <time datetime="time">00:00:00</time>
+                <br>
+                <button class="btn-closed">Closed</button>
+                <h4>Buy it now:₹39,000.00
+                </h4>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section>
+        <div id="sec3">
+            <button id="prev">Prev</button>
+<span style="margin: 22px;" id="page-info"></span>
+            <button id="next">Next</button>
+
+        </div>
+        <div id="heading">
+            <h1>How It Works</h1>
+            <div id="orange2">
+                <div id="whitee"></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="sub-topic">
+                <div class="description">
+                    <h1 class="number">01</h1>
+                    <h5>-Browser Products</h5>
+                    <p>Explore a wide variety of brand-new items from electronics, fashion, home essentials to gift
+                        cards.</p>
+                </div>
+        
+                <div class="description">
+                    <h1 class="number">02</h1>
+                    <h5>-Buy Bids</h5>
+                    <p>To participate in auctions, purchase bid packs. Each bid placed, reduced the item price.</p>
+                </div>
+        
+            
+                <div class="description"> 
+                    <h1 class="number">03</h1>
+                    <h5>-Join Auctions</h5>
+                    <p>Place bids on your favorite products. Every new bid resets the countdown timer.</p>
+                </div>
+            
+           
+                <div class="description">
+                    <h1 class="number">04</h1>
+                    <h5>–Buy It Now (BIN)</h5>
+                    <p>Didn’t win? No worries! Apply the bids you used toward buying the product at regular retail
+                        price.</p>
+                </div>
+           
+        </div>
+
+    </section>
+
+    <section>
+        <div id="section5">
+            <div id="AboutUS">
+                <h3>About Us</h3>
+                <p>Bid For Deal is the world’s premier “fair & honest” bidding site founded in 2020. We’ve delivered
+                    millions of brand-new products to satisfied customers across the Europe. Our mission is simple:</p>
+                <ul>
+                    <li>Make shopping exciting, fun, and affordable.</li>
+                    <li>Provide only brand-new items, shipped free, with warranties.</li>
+                    <li>Create a fair bidding environment with transparency and customer protection.</li>
+                </ul>
+                <button id="Readmore">Read More</button>
+            </div>
+
+            <div id="phoneimg">
+                <img src="/a1/1758631238_about_img.png" alt="error">
+            </div>
+        </div>
+
+
+    </section>
+
+    <section>
+        <div id="section6">
+            <h1>💥 Ready to Win Your Favorite Products at 90% Off?</h1>
+            <p>👉 Join millions of happy bidders today.</p>
+
+            <div id="Browse">
+                <button id="SignUpfree" class="free">Sign Up Free</button>
+                <button id="AuctionsNow" class="free">Browse Auctions Now</button>
+                <button id="FirstBid" class="free">Get Your First Bid Pack</button>
+            </div>
+
+            <div id="iconlogo">
+                <div class="tick"><i class="fa-solid fa-circle-check"></i>
+                    <h6>Easy to Join</h6>
+                    <span>Sign up in 30 seconds and get a welcome bid.</span>
+                </div>
+                <div class="winner"><i class="fa-solid fa-users"></i>
+                    <h6>Real Winners</h6>
+                    <span>Thousands of verified wins every week.</span>
+                </div>
+                <div class="secure"><i class="fa-solid fa-circle-check"></i>
+                    <h6>Secure Payments</h6>
+                    <span>Trusted checkout & buyer protection.</span>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <section>
+        <div id="line">
+            <h1>Frequently Asked Questions</h1>
+            <div class="linebar">
+                <div id="orange">
+                    <div id="whites"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="global">
+            <div id="shop">
+                <img src="/a1/mobile-shopping-concept-with.jpg" alt="">
+            </div>
+            <div id="ques">
+                <div id="firstbox" class="Question">Is Bid for deal legit</div>
+                <div class="answer">✅ Yes, Bid for Deal has been in business since 2020 with millions of customers and
+                    verified suppliers.</div>
+                <div class="Question">What happens if I don't win an auction?</div>
+                <div class="answer">👉 You can use the Buy It Now (BIN) option to purchase the product at retail and get
+                    all your bids back.</div>
+                <div class="Question">Are the Products new?</div>
+                <div class="answer">✅ 100% brand-new items, shipped from authorized partners with manufacturer warranty.
+                </div>
+                <div class="Question">Do I pay for shipping?</div>
+                <div class="answer">🚚 No,ShopHub provides free shipping on all items.</div>
+                <div id="lastbox" class="Question">How do I get bids?</div>
+                <div class="answer">👉 You can purchase bid packs from the website. Sometimes, special promotions offer
+                    extra bids at discounted prices.</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footerDiv">
+            <div id="foot">
+                <img src="bidfordeal.png" alt="error">
+                <p>We are a modern and trusted online shopping platform, connecting women, men, and families with the
+                    best in electronics, fashion, home essentials, gaming, books, health, beauty and automobile
+                    accessories.
+                </p>
+
+                    <button id="facebook" class="Mediaapp"><i class="fa-brands fa-facebook"></i></button>
+                    <button class="Mediaapp"><i class="fa-brands fa-instagram"></i></button>
+                    <button class="Mediaapp"><i class="fa-brands fa-youtube"></i></button>
+
+            </div>
+
+            <div id="door">
+                <div class="Site">Site Link <br>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i>About Us</a><br>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i>Contact Us</a>
+                </div>
+                <div class="Site">Contact <br>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> 123 New Delhi,India</a><br>
+                    <a href="#"><i class="fa-solid fa-square-envelope"></i>contact@bidfordeal.com</a><br>
+                    <a href="#"><i class="fa-solid fa-phone"></i>+91 43210 43210</a>
+                </div>
+                <div class="Site">Help <br>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i>Privacy Policy</a><br>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i>Terms & Conditions</a><br>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i>Orders & Shipping</a><br>
+                    <a href="#"><i class="fa-solid fa-arrow-right"></i>Refund Policy</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="last">
+            <p>Copyright © 2025. All rights reserved. Developed by <a href="#">IWS</a></p>
+        </div>
+
+    </footer>
+    <script src="bid.js"></script>
+</body>
+
+</html>

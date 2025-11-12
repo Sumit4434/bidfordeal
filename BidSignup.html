@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Signup</title>
+  <link
+    rel="icon"
+    href="https://bidfordeal.com/public/frontend_assets/img/bidfordeal_icon.png"
+    type="image/gif"
+    sizes="20x20"
+  />
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Poppins", sans-serif;
+      background-image: url("./PMBOK-7th-Edition-—-Whats-the-Big-Deal.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .CreateAccount {
+      width: 370px;
+      background-color: wheat;
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      text-align: center;
+      color: red;
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      margin-left: 10px;
+      font-weight: 600;
+    }
+
+    input {
+      display: block;
+      margin: 8px auto 15px;
+      width: 90%;
+      height: 35px;
+      border-radius: 10px;
+      border: 1px solid #aaa;
+      padding: 0 10px;
+      box-sizing: border-box;
+    }
+
+    p {
+      font-size: 13px;
+      text-align: center;
+      margin: 10px 20px;
+      color: #333;
+    }
+
+    #Create {
+      display: block;
+      width: 90%;
+      height: 35px;
+      border-radius: 10px;
+      background-color: orange;
+      color: black;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      margin: 10px auto;
+      transition: all 0.3s ease;
+    }
+
+    #Create:hover {
+      background-color: blue;
+      color: white;
+    }
+
+    #p2 {
+      margin-top: 10px;
+    }
+
+    a {
+      color: blue;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        height: 838px;
+        padding: 250px 10px;
+        align-items: flex-start;
+      }
+
+      .CreateAccount {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .CreateAccount {
+        width: 90%;
+        padding: 15px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
+
+      label {
+        font-size: 14px;
+      }
+
+      input {
+        height: 40px;
+        font-size: 15px;
+      }
+
+      #Create {
+        height: 40px;
+        font-size: 15px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="CreateAccount">
+    <form action="bidlogin.html">
+      <h2>Create Account</h2>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter Username" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter Email" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" required />
+
+      <p>
+        I have read and agree to the Terms of Use and Privacy Policy. I also
+        agree that I am at least 18 years of age and to only open one account
+        per person.
+      </p>
+
+      <button id="Create" type="submit">Create</button>
+
+      <p id="p2">Already have an account? <a href="bidlogin.html">Sign In</a></p>
+    </form>
+  </div>
+</body>
+</html>

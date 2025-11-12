@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <time datetime=""></time>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="https://bidfordeal.com/public/frontend_assets/img/bidfordeal_icon.png" type="image/gif" sizes="20x20">
+    
+    <style>
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("./ilustrasi_lelang_1673489995.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginDetail {
+  width: 350px;
+  background-color: beige;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+form {
+  background: transparent;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 10px;
+  color: #333;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px 5px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  border-radius: 10px;
+  height: 35px;
+  border: 1px solid #aaa;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+#seperate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin: 10px 0;
+  padding: 0 5px;
+}
+
+#seperate a {
+  text-decoration: none;
+  color: blue;
+}
+
+
+#LogIN {
+  width: 100%;
+  height: 35px;
+  border-radius: 15px;
+  background-color: orange;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#LogIN:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+p {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 835px;
+    padding: 250px 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .loginDetail {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .loginDetail {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  input {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  #seperate {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  #LogIN {
+    height: 40px;
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 13px;
+  }
+}
+</style>
+</head>
+<body>
+    <div class="loginDetail">
+    <form action="">
+       <h2>Login Page</h2>
+       <label for="username">Username</label>
+                <input type="text" name="" id="username" placeholder="Enter Username" required><br><br>
+             
+                <label for="password">Password</label>
+                <input type="password" name="" id="password" placeholder="Enter password" required>
+                <br><br>
+                <div id="seperate">
+                    <!-- <input type="checkbox"> -->
+                    <div>Stay logged in</div>
+                    <div> <a href="#">Forgot Password</a></div>
+                </div>
+                <br><br>
+                <button id="LogIN">Log In</button><br>
+                <p>Don’t have an account? <a href="BidSignup.html">Sign Up</a></p>
+
+                </form>
+    </div>
+    <script src="bidlogin.js"></script>
+</body>
+</html>

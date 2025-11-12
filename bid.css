@@ -1,0 +1,1271 @@
+*{
+    margin: 0;
+    padding: 0;
+  font-family: "Baloo Bhai 2", sans-serif;    
+}
+html, body {
+  overflow-x: hidden;
+}
+
+
+
+
+nav{
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(to right,#0c0a09,#fb923c);
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    /* justify-items: center; */
+    align-items: center;
+    color:white;
+    /* position: fixed; */
+
+    
+}
+nav div{
+    border-left: 2px solid white;
+    padding-left: 100px; 
+}
+nav i{
+    font-size: 15px;
+    margin-right: 7px;
+}
+#Active{
+    border: none;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 130px;
+    height: 50px;
+}
+
+.Search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f2f3f7;
+    border-radius: 25px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.Search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.hy {
+    background-color: #fb923c;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.hy i {
+    color: white;
+    font-size: 16px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn button {
+    background: #fb923c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn button:hover {
+    background:#fb923c;
+}
+#login{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 4px 28px;
+    margin-left: 4px;
+    gap: 8px;
+        font-size: 1.2rem;
+    
+}
+#signup{
+    display: flex;
+    text-align: center;
+    align-items: center;
+        padding: 4px 15px;
+    margin-left: 4px;
+    gap: 8px;
+    font-size:1.2rem;
+}
+#orange1{
+    height:3px;
+    width:6rem;
+    background-color: #fb923c;
+    padding-left:5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#whiter{
+    height: 4px;
+    width: 1em;
+    background-color:seashell;
+    padding-left:-20px;
+ border-radius: 20px;
+}
+#section1{
+    width: 100%;
+    height: 80vh;
+    background-image: url('./house-for-sale-auction-group-of-various-people-holds-bid-signs-best-price-offer-balance-of-supply-and-demand-real-estate-deal-vector.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   display: flex;
+   background-position: center;
+   justify-content: center;
+   box-sizing: border-box;
+}
+@media (max-width: 768px) {
+#section1{
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    /* margin:  0px 10px; */
+}
+}
+#products{
+    margin: 35px 70px;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.select-container {
+  position: relative;
+  display: inline-block;
+}
+
+.select-container select {
+  appearance: none;
+  /* background-color: orange; */
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px 10px 40px; 
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+
+.select-container::after {
+  content: "▼";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color:black;
+  font-size: 12px;
+  pointer-events: none;
+  /* background-color: white; */
+}
+
+
+.select-container .icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+
+.select-container :hover {
+  /* background-color: darkorange; */
+  color: #f97316;
+}
+
+#All{
+    padding-left: 40px;
+}
+
+#orange2{
+    height:3px;
+    width:6rem;
+    background-color: #fb923c;
+    padding-left:40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#whitee{
+    height: 4px;
+    width: 1em;
+    background-color:seashell;
+    padding-left:20px;
+ border-radius: 20px;
+}
+#parts{
+    margin-bottom: 10px;
+    padding-left: 5rem;
+        margin-top: 5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap:40px;
+        justify-content:space-around;    /* background-color: red; */
+}
+.cards{
+    height: 60vh;
+    width: 250px;
+   border: 2px solid gray;
+    /* background-color: aqua; */
+    border-radius:5px;
+   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* cursor: pointer; */
+overflow-x: hidden;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+  transform: translateY(-8px) scale(1); 
+  box-shadow: 0 10px 20px rgba(0,0,0,0.8); 
+}
+.cards button{
+     cursor: pointer;
+}
+
+/* .img{
+
+    height: 200px;
+    width: 400px;
+    align-items: center;
+    
+} */
+ .img {
+  height: 200px;
+  width: 100%;   /* ✅ pehle 400px tha — ab card ke width ke hisab se */
+  object-fit: cover;  /* ✅ image crop ho kar fit hogi */
+}
+
+.btn-closed{
+    width: 80%;
+    display: flex;
+    background:red;
+    color:white;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content:center;
+    justify-items: center;
+    margin-bottom: 10px;
+
+}
+.btn-closed:hover{
+    background-color: rgb(194, 34, 34);
+}
+.cards h3{
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.cards span{
+    margin: 5px;
+}
+ .cards time{
+    font-size: 30px;
+    color:red;
+}
+.extra{
+    margin-top: 30px;
+}
+#sec3{
+    margin:30px;
+    display: flex;
+    justify-content: center;
+}
+#sec3 button{
+    padding: 10px;
+    margin: 0px 20px;
+font-size: 25px;
+border-color: rgb(61, 159, 176);
+color:rgb(28, 120, 162);
+cursor: pointer;
+}
+#sec3 h5{
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight:490;
+}
+#heading{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#heading h1{
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* Section 4 */
+
+#sub-topic{
+    width: 100%;
+     min-height: 40vh;
+    /* background-color: rgb(255, 80, 240); */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    gap:20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.description {
+  flex: 1 1 250px;
+  max-width: 280px;
+  background-color: white;
+  color: black;
+  border: 3px solid whitesmoke;
+  border-radius: 15px;
+  border-bottom-right-radius: 80px;
+  padding: 15px;
+  transition: all 0.3s ease-in-out;
+}
+.number {
+  font-size: 25px;
+  margin: 10px auto;
+  width: 55px;
+  height: 40px;
+  background-color: #fb923c;
+  font-weight: bold;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#sub-topic h5{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px 0;
+}
+#sub-topic p{
+    text-align: left;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+/* Section5 */
+#section5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 55vh;
+  margin: auto;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+#AboutUS {
+  padding: 40px;
+  width: 50%;
+  height: auto;
+}
+
+#phoneimg {
+  width: 50%;
+  height: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#phoneimg img {
+  height: auto;
+  width: 85%;
+  border-radius: 15px;
+  object-fit: contain;
+}
+
+#AboutUS h3 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-left: 23px;
+}
+
+#AboutUS p {
+  margin: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+#AboutUS ul li {
+  margin-left: 45px;
+  margin-top: 5px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+#AboutUS button {
+  width: 125px;
+  height: 40px;
+  margin-top: 15px;
+  margin-left: 25px;
+  border-radius: 9px;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #fb923c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#AboutUS button:hover {
+  background-color: #f97316;
+}
+
+/* ✅ Responsive for Samsung Galaxy S24 Ultra & other mobiles */
+@media (max-width: 768px) {
+  #section5 {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    text-align: center;
+    gap: 30px;
+  }
+
+  #AboutUS {
+    width: 100%;
+    padding: 20px;
+    order: 1; /* text first */
+  }
+
+  #phoneimg {
+    width: 100%;
+    height: auto;
+    order: 2; /* image second */
+  }
+
+  #phoneimg img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #AboutUS h3 {
+    font-size: 24px;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #AboutUS p {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  #AboutUS ul {
+    text-align: left;
+    margin-left: 20px;
+  }
+
+  #AboutUS ul li {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+
+  #AboutUS button {
+    font-size: 16px;
+    width: 110px;
+    height: 38px;
+    margin: 15px auto;
+    display: block;
+  }
+}
+/* Section6 */
+#section6 {
+  margin-top: 20px;
+  width: 86%;
+  min-height: 45vh;
+  background: linear-gradient(to bottom, #fb923c, #0c0a09);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* ---------- TEXT ---------- */
+#section6 h1 {
+  text-align: center;
+  font-size: 28px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+#section6 p {
+  text-align: center;
+  color: #b7c0d6;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* ---------- BUTTONS ---------- */
+#Browse {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.free {
+  width: 230px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 10px;
+  color: white;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.free:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: white;
+  transform: translateY(-2px);
+}
+
+/* ---------- ICON LOGO AREA ---------- */
+#iconlogo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+#iconlogo div {
+  flex: 1 1 250px;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#iconlogo div:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+#iconlogo i {
+  font-size: 35px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Unique icon colors */
+.tick i {
+  color: #00e5ff;
+}
+.winner i {
+  color: #ffd700;
+}
+.secure i {
+  color: #7cff8e;
+}
+
+#iconlogo h6 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+#iconlogo span {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+/* Section7 */
+
+section{
+  width: 100%;
+  padding: 60px 6%;
+  box-sizing: border-box;
+  background: #fff;
+  font-family: "Poppins",sans-serif;
+}
+#line{
+    margin-bottom: 50px;
+    text-align: center;
+
+    /* justify-items: center; */
+}
+#line h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color:#222;
+}
+.linebar{
+  display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    /* margin-left: 30px; */
+   
+}
+
+#orange{
+    height: 3px;
+    width:3.5rem;
+    background-color:#fb923c;
+    padding-left: 82px;
+    border-radius: 20px;
+}
+#whites{
+    height: 4px;
+    width:2em;
+    background-color:seashell;
+    padding-left:10px;
+ border-radius: 20px;
+}
+#global{
+   /* background-color: #00e5ff; */
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   /* flex-direction: column; */
+   gap: 50px;
+   /* height: 80vh; */
+}
+#shop{
+    /* background-color: coral; */
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%;
+    height: 70vh; */
+}
+#shop img{
+   height: 60vh;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+      transition: transform 0.4s ease;
+}
+#shop img:hover{
+  transform: scale(1.03);
+}
+#ques{
+   flex:1;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   margin-bottom: 20px;
+}
+
+.Question{
+    margin-top: 20PX;
+    margin-left: 30PX;
+    width: 80%;
+    height: 6vh;
+    background-color:#FFFFFF;
+    border-radius:5px ;
+       text-align: left;
+       align-items: center;
+       padding-top:15px;
+       padding-left: 20px;
+       position: relative;
+       border: 2PX solid #E2E8F0;
+       cursor: pointer;
+       transition: all 0.3s ease;
+transition: border 2  ease-in-out;
+
+}
+ .Question::after {
+    content: "▾";  /* dropdown arrow */
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    
+  }
+    .Question.active {
+    border: 4px solid #C1DAFD; /* blue border when active */
+    background:#FE8A1F;
+  }
+    .Question.active::after {
+    transform: rotate(180deg); /* arrow rotate */
+  }
+  
+
+  .answer {
+    width: 78%;
+    display: none;
+    /* background:#FFFFFF; */
+    /* border-left: 3px solid #2563EB; */
+    border-radius: 0 0 8px 8px;
+    margin-top: -5px;
+    margin-left: 30px;
+    padding: 15px 20px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    animation: fadeIn 0.3s ease forwards;
+  }
+    @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+#firstbox{
+      border-bottom-left-radius: 15px;
+       border-bottom-right-radius: 15px;
+}
+#lastbox{
+      border-top-left-radius: 15px;
+       border-top-right-radius: 15px;
+}
+@media (max-width: 992px) {
+      #global {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+
+      #shop img {
+        max-width: 400px;
+        margin-left:0px 40px;
+        height: 500px;
+      }
+
+      #line h1 {
+        font-size: 2rem;
+      }
+
+      .Question::after {
+        right: 15px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 40px 5%;
+      }
+
+      #line h1 {
+        font-size: 1.6rem;
+      }
+
+      #shop img {
+        width: 100%;
+        max-width: 320px;
+        height: 400px;
+        /* margin-right: 5=px; */
+      }
+
+      .Question {
+        font-size: 0.95rem;
+        padding: 12px 15px;
+      }
+
+      .answer {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+      }
+    }
+
+/* footer */
+footer {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footerDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 30px 20px;
+}
+
+#foot {
+  flex: 1 1 300px;
+  text-align: left;
+}
+
+#foot img {
+  height: 70px;
+  width: 35%;
+  margin-bottom: 15px;
+}
+
+#foot p {
+  max-width: 500px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.Mediaapp {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-size: 22px;
+  border-radius: 9px;
+  background-color: #fb923c;
+  color: white;
+  border: none;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+#door {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.Site h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+#door a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  display: block;
+  margin: 5px 0;
+}
+
+#door i {
+  font-size: 12px;
+  margin-right: 8px;
+  color: #fb923c;
+}
+
+#last {
+  text-align: center;
+  background-color: #DDE2EA;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 14px;
+  margin: 20px auto 0;
+  width: 95%;
+}
+
+#last a {
+  text-decoration: none;
+  color: #fb923c;
+  font-weight: 600;
+}
+
+
+
+@media (max-width: 1024px) {
+  .footerDiv {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #foot, #door {
+    width: 100%;
+  }
+
+  #door {
+    justify-content: center;
+    gap: 40px;
+  }
+
+  #foot img {
+    width: 45%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  footer {
+    padding: 10px;
+  }
+
+  .footerDiv {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  #foot img {
+    width: 60%;
+  }
+
+  #foot p {
+    font-size: 14px;
+  }
+
+  .Mediaapp {
+    font-size: 20px;
+    height: 35px;
+    width: 35px;
+  }
+
+  #door {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .Site h4 {
+    font-size: 16px;
+  }
+
+  #door a {
+    font-size: 14px;
+  }
+
+  #last {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
+
+/*        footer end */
+
+@media only screen and (max-width:768px){
+    nav{
+    text-align:center;
+    gap: 12px;
+    }
+      nav div {
+        margin-top: 5px;
+    justify-content: center;
+    padding: 10px 0px;
+    padding-left: 2px;
+    /* border-bottom: 1px solid red; */
+  }
+    nav h4{
+        font-size: 14px;
+    }
+    
+       .Container {
+        /* flex-direction: column; */
+        align-items: center;
+        padding: 10px 15px;
+        gap: 5px;
+        /* background-color: #7FF0A8; */
+      
+    }
+
+    .logo img {
+        margin-top: 5px;
+        width: 100px;
+    }
+
+    .Search-bar {
+        width: 100%;
+        margin: 10px 5px;
+          border: 2px solid gray;
+    }
+
+    .Search-bar input {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .hy {
+        padding: 8px 10px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .btn button {
+        font-size: 13px;
+        padding: 7px 12px;
+        width: auto;
+    }
+
+    #section1{
+width: 100%;
+position: relative;
+    }
+
+    /* Sectionn2 */
+
+    #section2{
+        width: 100%;
+    }
+    #products{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+    #All{
+       font-size: 1.4rem;
+       display: inline;
+       margin-left:-100px;
+    }
+    .select-container{
+        
+        margin-left:15px;
+        appearance: none;
+      
+
+    }
+      
+
+ 
+    .icon{
+        top:38%;
+    }
+    #parts{
+        width: 100%;
+        margin-right: 20px;
+        /* justify-items: center;
+        align-items: center; */
+    }
+    .cards{
+        width:100%;
+    justify-items: center;
+    /* margin-right: 60px;
+    height:auto;
+    gap:20px; */
+    }
+
+/* Section 4 */
+ 
+
+#sub-topic{
+flex-direction: column;
+align-items: center;
+height: auto;
+}
+
+.description{
+    width: 85%;
+    max-width: 360px;
+    margin: 10px 0;
+    height: auto;
+    border-bottom-right-radius: 50px;
+}
+.number{
+    font-size: 20px;
+    width: 45px;
+    height: 35px;
+
+}
+#sub-topic h5{
+    font-size: 16px;
+
+}
+#sub-topic p{
+    font-size:14px;
+}
+
+/* Section 5 */
+
+/* section6 */
+
+ @media (max-width: 768px) {
+  #section6 {
+    width: 95%;
+    padding: 25px 15px;
+  }
+
+  #section6 h1 {
+    font-size: 22px;
+    line-height: 1.4;
+  }
+
+  #section6 p {
+    font-size: 15px;
+  }
+
+  .free {
+    width: 90%;
+    max-width: 320px;
+    font-size: 14px;
+    height: 45px;
+  }
+
+  #iconlogo {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  #iconlogo div {
+    width: 85%;
+  }
+
+  #iconlogo i {
+    font-size: 30px;
+  }
+
+  #iconlogo h6 {
+    font-size: 16px;
+  }
+
+  #iconlogo span {
+    font-size: 13px;
+  }
+}
+
+ @media (max-width: 992px) {
+      #global {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+      }
+
+      #shop img {
+        max-width: 400px;
+        margin-left: 40px;
+      }
+
+      #line h1 {
+        font-size: 2rem;
+      }
+
+      .Question::after {
+        right: 15px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      section {
+        padding: 40px 5%;
+      }
+
+      #line h1 {
+        font-size: 1.6rem;
+      }
+
+      #shop img {
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .Question {
+        font-size: 0.95rem;
+        padding: 12px 15px;
+      }
+
+      .answer {
+        font-size: 0.9rem;
+        padding: 12px 15px;
+      }
+    }
+    @media  only screen and (max-width:700px){
+footer{
+  width: 100%;
+  height: auto;
+}
+.footerDiv{
+  display: flex;
+  flex-direction: column;
+}
+    }
+      
+    }
+}
+                                  /* FOR API FETCH */
+.title{
+  margin-top: 10px;
+  font-size: 25px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.img{
+  margin-top: 40px;
+}
+.btn-closed{
+  margin-top: 30px;
+
+}
+.cards{
+  height: 380px;
+}  
+
+
+#sec3 ul li{
+  display: inline-block;
+margin: 0px 5px;
+width: 45px;
+height: 45px;
+text-align: center;
+font-size: 22px;
+font-weight: 500;
+line-height: 45px;
+cursor: pointer;
+}

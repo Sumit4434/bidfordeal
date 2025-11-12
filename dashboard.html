@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-wxM5FYwJw2ZptwJYxJjB05QlwZbm7V0ZqAInwTqlce8mZoy0jqFJf7HjxnUyFzUyQy6dPvN5w1uH2wE29NHB7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+</head>
+<style>
+    nav{
+    width: 100%;
+    height: 7vh;
+    background: linear-gradient(to right,#0c0a09,#fb923c);
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    /* justify-items: center; */
+    align-items: center;
+    color:white;
+    /* position: fixed; */
+
+    
+}
+nav div{
+    border-left: 2px solid white;
+    padding-left: 100px; 
+}
+nav i{
+    font-size: 15px;
+    margin-right: 7px;
+}
+#Active{
+    border: none;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    /* position: fixed; */
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 130px;
+    height: 50px;
+}
+
+.Search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f2f3f7;
+    border-radius: 25px;
+    overflow: hidden;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+}
+
+.Search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+
+.hy {
+    background-color: #fb923c;
+    padding: 10px 14px;
+    cursor: pointer;
+}
+
+.hy i {
+    color: white;
+    font-size: 16px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn button {
+    background: #fb923c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn button:hover {
+    background:#fb923c;
+}
+#login{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 4px 28px;
+    margin-left: 4px;
+    gap: 8px;
+        font-size: 1.2rem;
+    
+}
+/* #signup{
+    display: flex;
+    text-align: center;
+    align-items: center;
+        padding: 4px 15px;
+    margin-left: 4px;
+    gap: 8px;
+    font-size:1.2rem;
+} */
+#orange1{
+    height:3px;
+    width:6rem;
+    background-color: #fb923c;
+    padding-left:5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#whiter{
+    height: 4px;
+    width: 1em;
+    background-color:seashell;
+    padding-left:-20px;
+ border-radius: 20px;
+}
+@media only screen and (max-width:768px){
+    nav{
+    text-align:center;
+    gap: 12px;
+    }
+      nav div {
+        margin-top: 5px;
+    justify-content: center;
+    padding: 10px 0px;
+    padding-left: 2px;
+    /* border-bottom: 1px solid red; */
+  }
+    nav h4{
+        font-size: 14px;
+    }
+    
+       .Container {
+        /* flex-direction: column; */
+        align-items: center;
+        padding: 10px 15px;
+        gap: 5px;
+        /* background-color: #7FF0A8; */
+      
+    }
+
+    .logo img {
+        margin-top: 5px;
+        width: 100px;
+    }
+
+    .Search-bar {
+        width: 100%;
+        margin: 10px 5px;
+          border: 2px solid gray;
+    }
+
+    .Search-bar input {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    .hy {
+        padding: 8px 10px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    .btn button {
+        font-size: 13px;
+        padding: 7px 12px;
+        width: auto;
+    }}
+
+    /*  main div */
+    #main{
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    #left-div{
+width: 20%;
+        /* background-color: aqua; */
+        /* display: flex; */
+    }
+    #right-div{
+        width: 100%;
+        /* background-color: aquamarine; */
+    }
+    #right-subdiv{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap:15px;
+        box-sizing: border-box;
+        /* border: 2px solid red; */
+        justify-content: space-evenly;
+        margin-top: 50px;
+    }
+    .div-box{
+        padding-top: 20px;
+        background-color:whitesmoke;
+        border-radius: 10px;
+        width: 30%;
+        height: 18vh;
+        border: 1px solid whitesmoke;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+   .div-box{
+    transform: all 0.4s ease;
+     box-shadow: 0 6px 16px rgba(0,0,0,0.3);
+   }
+   .div-box:hover{
+transform:translateY(-10px) scale(1.05);
+
+   }
+   .left-top{
+    display: flex;
+    /* background-color: #fb923c; */
+    width: 100%;
+   }
+   
+</style>
+<body>
+        <nav>
+        <div id="Active">
+            <h4><i class="fa-solid fa-gavel"></i>Active Auctions</h4>
+        </div>
+        <div>
+            <h4><i class="fa-solid fa-arrows-to-dot"></i>Corrigendum</h4>
+        </div>
+        <div>
+            <h4><i class="fa-solid fa-sack-dollar"></i>Auctions By Value</h4>
+        </div>
+        <div>
+            <h4><i class="fa-solid fa-gift"></i>Results of Auctions</h4>
+        </div>
+    </nav>
+    <header>
+        <div class="Container">
+            <div class="logo">
+                <img src="bidfordeal.png" alt="error">
+                
+            </div>
+            <div class="Search-bar">
+                <input type="text" placeholder="Search for  products,brands and more.. ">
+                <div class="hy">
+                    <i id="icon" class="fa-solid fa-magnifying-glass"></i>
+
+                </div>
+            </div>
+            <div class="btn">
+
+                <button id="login"> <i class="fa-solid fa-user"></i>Sumit</button>
+                <!-- <button id="signup"><i class="fa-solid fa-user-plus"></i>Signup</button> -->
+
+            </div>
+        </div>
+    </header>
+    <div id="main">
+        <div id="left-div">
+            <div class="left-top">
+            <div id="img">
+                <!-- <img src="/a1/1758191932.jpg" sizes="20x20"> -->
+            </div>
+            <div id="user">
+              <h2>Sumit</h2>
+            <p>Edit Profile</p>
+            </div>
+            </div>
+            <div id="list">
+
+    <h3>Dashboard</h3>
+     <h3>My Wallet</h3>
+      <h3>My Profile</h3>
+       <h3>Change Password</h3>
+       <h3>Bidding History</h3>
+     <h3>Bookmark</h3>
+      <h3>My Orders</h3>
+      <h3>My Address</h3>
+     <h3>Log Out</h3>
+     
+
+            </div>
+        </div>
+        <div id="right-div">
+            <h2 style="padding: 20px;">Dashboard Overview</h2>
+            <div id="right-subdiv">
+                <div class="div-box">
+                  <i class="fa-solid fa-check-double"></i>
+                    <h3>My Orders</h3>
+                    <p>View and manage your orders</p>
+                </div>
+                   <div class="div-box">
+          <i class="fa-solid fa-bookmark"></i>
+                    <h3>BookMarked Products</h3>
+                    <p>Check your saved products</p>
+                   </div>
+                      <div class="div-box">  
+                        <i class="fa-solid fa-user"></i>
+                    <h3>Profile</h3>
+                    <p>View or edit your profile</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
